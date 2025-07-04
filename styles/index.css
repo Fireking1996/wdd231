@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+:root {
+  --primary: #1a1a1a;       /* Dark stone */
+  --accent: #b30000;        /* Blood red */
+  --highlight: #af9d57;     /* Golden trim */
+  --background: #f4ecd8;    /* Parchment */
+  --text: #2c2c2c;          /* Deep dark gray */
+  --completed: #7eaf6e;     /* Sage green */
+  --incomplete: #963434;    /* Rust red */
+  --font-main: 'Cinzel', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--primary);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background: var(--accent);
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 4px solid var(--highlight);
+}
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo {
+  height: 40px;
+}
+#hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--background);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--background);
+  padding: 0.5rem;
+}
+nav a.active,
+nav a:hover {
+  background: var(--highlight);
+  color: var(--text);
+  border-radius: 4px;
+}
+
+/* Main layout */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+h1 {
+  font-size: 2.5rem;
+  color: var(--highlight);
+  margin-bottom: 1rem;
+}
+
+.about-photo {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.about, .photo {
+  flex: 1;
+  background: var(--background);
+  border: 4px double var(--accent);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.photo img {
+  max-width: 100%;
+  border: 3px solid var(--highlight);
+  border-radius: 8px;
+}
+
+/* Courses Section */
+.courses {
+  text-align: center;
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 4px double var(--accent);
+  margin-bottom: 2rem;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.filters button {
+  padding: 0.6rem 1.5rem;
+  border: 2px solid var(--accent);
+  background: var(--highlight);
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.filters button:hover {
+  background: var(--accent);
+  color: var(--background);
+}
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.course-card {
+  min-width: 160px;
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px double var(--primary);
+  font-size: 1rem;
+}
+.course-card.completed {
+  background: var(--completed);
+  border-color: darkgreen;
+}
+.course-card.incomplete {
+  background: var(--incomplete);
+  color: white;
+  border-color: darkred;
+}
+.credits {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+footer .socials a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--highlight);
+}
+footer .socials a:hover {
+  color: var(--accent);
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: var(--accent);
+    padding: 1rem;
+  }
+}
