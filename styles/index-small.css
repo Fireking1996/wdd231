@@ -1,0 +1,58 @@
+.about-photo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+section {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.filters {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filters button {
+  width: 100%;
+}
+
+#hamburger {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+
+  #nav-menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #004aad;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  #nav-menu ul.show {
+    display: flex;
+  }
+}

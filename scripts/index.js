@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
+
   // Course data
 const courses = [
     {
@@ -91,7 +92,7 @@ const courses = [
     }
 ]
 
-  const courseList = document.getElementById("course-list");
+ const courseList = document.getElementById("course-list");
   const totalCredits = document.getElementById("total-credits");
 
   function renderCourses(list) {
@@ -102,20 +103,45 @@ const courses = [
     list.forEach(course => {
       const div = document.createElement("div");
       div.className = `course-card ${course.completed ? "completed" : "incomplete"}`;
-      div.innerHTML = `<strong>${course.code}</strong><br>${course.name}<br><em>${course.credits} credit(s)</em>`;
+      div.innerHTML = `
+        <strong>${course.subject} ${course.number}</strong><br>
+        ${course.title}<br>
+        <em>${course.credits} credit(s)</em>
+      `;
       courseList.appendChild(div);
     });
   }
 
-  // Initial
+  // Initial load
   renderCourses(courses);
 
-  // Filters
+  // Filter buttons
   document.getElementById("allBtn").addEventListener("click", () => renderCourses(courses));
-  document.getElementById("wddBtn").addEventListener("click", () =>
-    renderCourses(courses.filter(c => c.category === "WDD"))
-  );
   document.getElementById("cseBtn").addEventListener("click", () =>
-    renderCourses(courses.filter(c => c.category === "CSE"))
+    renderCourses(courses.filter(c => c.subject === "CSE"))
   );
+  document.getElementById("wddBtn").addEventListener("click", () =>
+    renderCourses(courses.filter(c => c.subject === "WDD"))
+  );
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu").querySelector("ul");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  // Optional: Auto-highlight current page link
+  const links = document.querySelectorAll("#nav-menu a");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
 });
