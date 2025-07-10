@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sunset Bakery",
+    "address": "123 Main St, Hometown, ST",
+    "phone": "555-123-4567",
+    "url": "https://sunsetbakery.com",
+    "image": "sunset-bakery.webp",
+    "membership": 1,
+    "info": "Fresh baked goods daily."
+  },
+  {
+    "name": "Green Tech Solutions",
+    "address": "456 Greenway Blvd, Hometown, ST",
+    "phone": "555-234-5678",
+    "url": "https://greentech.com",
+    "image": "green-tech.webp",
+    "membership": 3,
+    "info": "Eco-friendly technology consulting."
+  },
+  {
+    "name": "Hometown Hardware",
+    "address": "789 Toolshed Ave, Hometown, ST",
+    "phone": "555-345-6789",
+    "url": "https://hometownhardware.com",
+    "image": "hometown-hardware.webp",
+    "membership": 2,
+    "info": "Local tools and home improvement."
+  },
+  {
+    "name": "Luxe Salon & Spa",
+    "address": "101 Pamper Lane, Hometown, ST",
+    "phone": "555-456-7890",
+    "url": "https://luxesalon.com",
+    "image": "luxe-salon.webp",
+    "membership": 3,
+    "info": "Relaxation and beauty services."
+  },
+  {
+    "name": "Bright Future Tutoring",
+    "address": "202 Learning Dr, Hometown, ST",
+    "phone": "555-567-8901",
+    "url": "https://brightfuture.com",
+    "image": "bright-future.webp",
+    "membership": 2,
+    "info": "Academic tutoring for all ages."
+  },
+  {
+    "name": "Iron Gym",
+    "address": "303 Fit St, Hometown, ST",
+    "phone": "555-678-9012",
+    "url": "https://irongym.com",
+    "image": "iron-gym.webp",
+    "membership": 1,
+    "info": "Train hard, live stronger."
+  },
+  {
+    "name": "Summit Marketing",
+    "address": "404 Media Way, Hometown, ST",
+    "phone": "555-789-0123",
+    "url": "https://summitmarketing.com",
+    "image": "summit-marketing.webp",
+    "membership": 3,
+    "info": "Strategic marketing solutions."
+  }
+]
