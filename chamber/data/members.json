@@ -1,65 +1,65 @@
 [
   {
-    "name": "Sunset Bakery",
-    "address": "123 Main St, Hometown, ST",
-    "phone": "555-123-4567",
-    "url": "https://sunsetbakery.com",
-    "image": "sunset-bakery.webp",
+    "name": "George's Restaurant",
+    "address": "116 MS-15, New Albany, MS 38652",
+    "phone": "(662) 534-4276",
+    "url": "https://www.facebook.com/people/Georges-Restaurant/100057409631764/",
+    "image": "george's.jpeg",
     "membership": 1,
-    "info": "Fresh baked goods daily."
+    "info": "Fresh fried chicken and burgers."
   },
   {
-    "name": "Green Tech Solutions",
-    "address": "456 Greenway Blvd, Hometown, ST",
-    "phone": "555-234-5678",
-    "url": "https://greentech.com",
-    "image": "green-tech.webp",
+    "name": "Tallahatchie Gourmet",
+    "address": "119 W Main St, New Albany, MS 38652",
+    "phone": "(662) 534-3250",
+    "url": "tallahatchiegourmet.com",
+    "image": "tg.png",
     "membership": 3,
-    "info": "Eco-friendly technology consulting."
+    "info": "New Orleans-style comfort food, from po' boys to shrimp and grits, served in a casual setting."
   },
   {
-    "name": "Hometown Hardware",
-    "address": "789 Toolshed Ave, Hometown, ST",
-    "phone": "555-345-6789",
-    "url": "https://hometownhardware.com",
-    "image": "hometown-hardware.webp",
+    "name": "Sugaree's Bakery",
+    "address": "110 W Bankhead St, New Albany, MS 38652",
+    "phone": "(866) 784-2733",
+    "url": "sugarees.com",
+    "image": "sugaree's.jpeg",
     "membership": 2,
-    "info": "Local tools and home improvement."
+    "info": "Bakery known for its made-from-scratch Southern layer cakes, including coconut and red velvet."
   },
   {
-    "name": "Luxe Salon & Spa",
-    "address": "101 Pamper Lane, Hometown, ST",
-    "phone": "555-456-7890",
-    "url": "https://luxesalon.com",
-    "image": "luxe-salon.webp",
+    "name": "The Calico Mushroom",
+    "address": "401 E Main St #3931, New Albany, MS 38652",
+    "phone": "(662) 534-9418",
+    "url": "https://www.calicomushroom.com/",
+    "image": "calico.jpeg",
     "membership": 3,
-    "info": "Relaxation and beauty services."
+    "info": "Antique Store."
   },
   {
-    "name": "Bright Future Tutoring",
-    "address": "202 Learning Dr, Hometown, ST",
-    "phone": "555-567-8901",
-    "url": "https://brightfuture.com",
-    "image": "bright-future.webp",
+    "name": "The Warehouse Fish and Steak House",
+    "address": "218 Carter Ave, New Albany, MS 38652",
+    "phone": "(662) 539-7025",
+    "url": "https://fishandsteak.com",
+    "image": "steak.png",
     "membership": 2,
-    "info": "Academic tutoring for all ages."
+    "info": "Steak house."
   },
   {
-    "name": "Iron Gym",
-    "address": "303 Fit St, Hometown, ST",
-    "phone": "555-678-9012",
-    "url": "https://irongym.com",
-    "image": "iron-gym.webp",
+    "name": "New Tokyo Sushi and Hibachi",
+    "address": "100 Hwy 30 W, New Albany, MS 38652",
+    "phone": "(662) 539-7050",
+    "url": "natokyosushi.com",
+    "image": "tokyo.png",
     "membership": 1,
-    "info": "Train hard, live stronger."
+    "info": "Sushi and hibachi."
   },
   {
-    "name": "Summit Marketing",
-    "address": "404 Media Way, Hometown, ST",
-    "phone": "555-789-0123",
-    "url": "https://summitmarketing.com",
-    "image": "summit-marketing.webp",
+    "name": "Latham's Hamburger Inn",
+    "address": "106 W Main St, New Albany, MS 38652",
+    "phone": "(662) 539-7023",
+    "url": "https://latham's.com",
+    "image": "latham's.jpeg",
     "membership": 3,
-    "info": "Strategic marketing solutions."
+    "info": "Burgers."
   }
 ]
