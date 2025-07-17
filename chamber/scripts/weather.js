@@ -1,4 +1,4 @@
-const apiKey = "YOUR_API_KEY";
+const apiKey = "732c24781e3c81496692746a89e2d772";
 const cityID = "4438121";
 const base = "https://api.openweathermap.org/data/2.5/";
 
@@ -7,6 +7,7 @@ async function loadWeather() {
     fetch(`${base}weather?id=${cityID}&units=imperial&appid=${apiKey}`),
     fetch(`${base}forecast?id=${cityID}&units=imperial&appid=${apiKey}`)
   ]);
+
   const curr = await currRes.json();
   const fc = await fcRes.json();
 
@@ -23,7 +24,7 @@ async function loadWeather() {
   const container = document.getElementById("weather-container");
   container.innerHTML = `
     <p>Current: ${temp}°F – ${desc}</p>
-    <h3>3‑Day Forecast</h3>
+    <h3>3-Day Forecast</h3>
     <ul>
       ${forecasts.map(f =>
         `<li>${f.date}: ${f.temp}°F</li>`
