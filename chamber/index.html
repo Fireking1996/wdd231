@@ -16,14 +16,17 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="[Your Chamber Name] Logo" />
-    <h1>New Albany Chamber of Commerce</h1>
+    <div class="logo">
+      <img src="images/logo.png" alt="[Your Chamber Name] Logo" />
+      <h1>Member Directory | New Albany Chamber of Commerce</h1>
+    </div>
     <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+      <button id="menu-button" aria-label="Toggle Menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
       </ul>
     </nav>
   </header>
