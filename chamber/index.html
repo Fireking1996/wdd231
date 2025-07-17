@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official home page of the New Albany Chamber of Commerce in Mississippi. Join, connect, and grow with our local business community." />
+  <meta property="og:title" content="New Albany Chamber of Commerce" />
+  <meta property="og:description" content="Support local business and community in New Albany, MS." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <title>New Albany Chamber of Commerce | Home</title>
+  <link rel="stylesheet" href="styles/directory.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+</head>
+<body>
+  <header>
+    <h1>New Albany Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.jpeg" alt="Welcome to New Albany" />
+      <div class="hero-text">
+        <h2>Connect. Grow. Thrive.</h2>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>July 20:</strong> Summer Business Expo at Union Square</li>
+        <li><strong>July 28:</strong> Networking Breakfast – Coffee & Commerce</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <div id="weather-container">
+        <p>Loading weather data...</p>
+      </div>
+    </section>
+
+    <!-- Business Spotlights -->
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div class="spotlight-container" id="spotlight-container">
+        <!-- JS will populate -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>📍 123 Chamber Lane, New Albany, MS 38652 | 📞 (662) 123-4567</p>
+    <p>&copy; <span id="year"></span> Charles Adam Davis | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/members.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+</body>
+</html>
