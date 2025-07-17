@@ -5,7 +5,7 @@
     "phone": "(662) 534-4276",
     "url": "https://www.facebook.com/people/Georges-Restaurant/100057409631764/",
     "image": "george's.jpeg",
-    "membership": 1,
+    "membership": "Gold",
     "info": "Fresh fried chicken and burgers."
   },
   {
@@ -14,7 +14,7 @@
     "phone": "(662) 534-3250",
     "url": "tallahatchiegourmet.com",
     "image": "tg.png",
-    "membership": 3,
+    "membership": "Silver",
     "info": "New Orleans-style comfort food, from po' boys to shrimp and grits, served in a casual setting."
   },
   {
@@ -23,7 +23,7 @@
     "phone": "(866) 784-2733",
     "url": "sugarees.com",
     "image": "sugaree's.jpeg",
-    "membership": 2,
+    "membership": "Gold",
     "info": "Bakery known for its made-from-scratch Southern layer cakes, including coconut and red velvet."
   },
   {
@@ -32,7 +32,7 @@
     "phone": "(662) 534-9418",
     "url": "https://www.calicomushroom.com/",
     "image": "calico.jpeg",
-    "membership": 3,
+    "membership": "Silver",
     "info": "Antique Store."
   },
   {
@@ -41,7 +41,7 @@
     "phone": "(662) 539-7025",
     "url": "https://fishandsteak.com",
     "image": "steak.png",
-    "membership": 2,
+    "membership": "Silver",
     "info": "Steak house."
   },
   {
@@ -50,7 +50,7 @@
     "phone": "(662) 539-7050",
     "url": "natokyosushi.com",
     "image": "tokyo.png",
-    "membership": 1,
+    "membership": "Silver",
     "info": "Sushi and hibachi."
   },
   {
@@ -59,7 +59,7 @@
     "phone": "(662) 539-7023",
     "url": "https://latham's.com",
     "image": "latham's.jpeg",
-    "membership": 3,
+    "membership": "Silver",
     "info": "Burgers."
   }
 ]
