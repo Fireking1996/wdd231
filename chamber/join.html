@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join | New Albany Chamber of Commerce</title>
+  <meta property="og:title" content="Home | New Albany Chamber of Commerce" />
+  <meta property="og:description" content="Discover local businesses and their services in our chamber directory." />
+<meta property="og:image" content="https://fireking1996.github.io/wdd231/chamber/images/hero.jpeg" />
+  <meta property="og:url" content="https://fireking1996.github.io/wdd231/chamber/join.html" />
+  <link rel="stylesheet" href="styles/directory.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/join.css" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="[Your Chamber Name] Logo" />
+    <h1>Join | New Albany Chamber of Commerce</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="get" action="thankyou.html" novalidate>
+      <label for="firstName">
+        First Name:
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          required
+          title="Enter your first name"
+          autocomplete="given-name"
+          placeholder="John"
+        />
+      </label>
+
+      <label for="lastName">
+        Last Name:
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          required
+          title="Enter your last name"
+          autocomplete="family-name"
+          placeholder="Doe"
+        />
+      </label>
+
+      <label for="orgTitle">
+        Organizational Title:
+        <input
+          type="text"
+          id="orgTitle"
+          name="orgTitle"
+          title="Enter your organizational title (letters, hyphens, spaces, min 7 characters)"
+          autocomplete="organization-title"
+          pattern="^[A-Za-z\s-]{7,}$"
+          placeholder="Marketing Manager"
+        />
+      </label>
+
+      <label for="email">
+        Email Address:
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          title="Enter your email address"
+          autocomplete="email"
+          placeholder="example@domain.com"
+        />
+      </label>
+
+      <label for="mobilePhone">
+        Mobile Phone:
+        <input
+          type="tel"
+          id="mobilePhone"
+          name="mobilePhone"
+          required
+          title="Enter your mobile phone number"
+          autocomplete="tel"
+          placeholder="123-456-7890"
+        />
+      </label>
+
+      <label for="businessName">
+        Business/Organization Name:
+        <input
+          type="text"
+          id="businessName"
+          name="businessName"
+          required
+          title="Enter your business or organization name"
+          autocomplete="organization"
+          placeholder="Acme Corp"
+        />
+      </label>
+
+      <fieldset>
+        <legend>Membership Level:</legend>
+
+        <label>
+          <input type="radio" name="membershipLevel" value="NP Membership" checked />
+          NP Membership (Non-Profit, No Fee)
+        </label>
+        <label>
+          <input type="radio" name="membershipLevel" value="Bronze Membership" />
+          Bronze Membership
+        </label>
+        <label>
+          <input type="radio" name="membershipLevel" value="Silver Membership" />
+          Silver Membership
+        </label>
+        <label>
+          <input type="radio" name="membershipLevel" value="Gold Membership" />
+          Gold Membership
+        </label>
+      </fieldset>
+
+      <label for="description">
+        Business/Organization Description:
+        <textarea
+          id="description"
+          name="description"
+          title="Enter a description of your business or organization"
+          placeholder="Briefly describe your business or organization"
+        ></textarea>
+      </label>
+
+      <input
+        type="hidden"
+        id="timestamp"
+        name="timestamp"
+        value=""
+      />
+
+      <input type="submit" value="Submit Membership Application" />
+    </form>
+
+    <section class="membership-cards" aria-label="Membership Levels">
+      <article class="membership-card" tabindex="0">
+        <h3>NP Membership</h3>
+        <p>Non-Profit Organizations. No Fee.</p>
+        <a href="#modal-np" class="open-modal" data-modal="modal-np">More Info</a>
+      </article>
+
+      <article class="membership-card" tabindex="0">
+        <h3>Bronze Membership</h3>
+        <p>Basic membership with some benefits.</p>
+        <a href="#modal-bronze" class="open-modal" data-modal="modal-bronze">More Info</a>
+      </article>
+
+      <article class="membership-card" tabindex="0">
+        <h3>Silver Membership</h3>
+        <p>Includes training and event discounts.</p>
+        <a href="#modal-silver" class="open-modal" data-modal="modal-silver">More Info</a>
+      </article>
+
+      <article class="membership-card" tabindex="0">
+        <h3>Gold Membership</h3>
+        <p>Full benefits including spotlight advertising.</p>
+        <a href="#modal-gold" class="open-modal" data-modal="modal-gold">More Info</a>
+      </article>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal-np" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-np-title" tabindex="-1">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-np-title">NP Membership Benefits</h2>
+        <ul>
+          <li>No membership fee</li>
+          <li>Access to networking events</li>
+          <li>Newsletter subscription</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-bronze" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-bronze-title" tabindex="-1">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-bronze-title">Bronze Membership Benefits</h2>
+        <ul>
+          <li>Basic event access</li>
+          <li>Business directory listing</li>
+          <li>Invitation to monthly mixers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-silver" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-silver-title" tabindex="-1">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-silver-title">Silver Membership Benefits</h2>
+        <ul>
+          <li>All Bronze benefits</li>
+          <li>Discounted training sessions</li>
+          <li>Priority event registration</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal-gold" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gold-title" tabindex="-1">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h2 id="modal-gold-title">Gold Membership Benefits</h2>
+        <ul>
+          <li>All Silver benefits</li>
+          <li>Spotlight advertising on homepage</li>
+          <li>Exclusive VIP event invitations</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>📍 123 Chamber Lane, New Albany, MS 38652 | 📞 (662) 123-4567</p>
+    <p>&copy; <span id="year"></span> Charles Adam Davis | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+</body>
+</html>
