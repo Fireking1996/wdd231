@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Historic City Hall",
+    "image": "images/cityhall.webp",
+    "address": "123 Main St, New Albany",
+    "description": "Built in 1890, this town hall is a great example of Victorian architecture."
+  },
+  {
+    "title": "Park Along the River",
+    "image": "images/park.webp",
+    "address": "456 Park Ave, New Albany",
+    "description": "A beautiful green space featuring walking trails, playgrounds, and a pond."
+  },
+  {
+    "title": "Union County Heritage Museum",
+    "image": "images/museum.webp",
+    "address": "789 History Ln, New Albany",
+    "description": "Explore exhibits showcasing the rich heritage of our community."
+  },
+  {
+    "title": "Tanglefoot Trail",
+    "image": "images/trail.webp",
+    "address": "Riverside Dr, New Albany",
+    "description": "Scenic trail along the river, perfect for biking and walking."
+  },
+  {
+    "title": "Union County Library",
+    "image": "images/library.webp",
+    "address": "101 Library St, New Albany",
+    "description": "A modern library offering books, digital resources, and programs for all ages."
+  },
+  {
+    "title": "Stokes",
+    "image": "images/stokes.webp",
+    "address": "Central Plaza, New Albany",
+    "description": "The best place to get your food."
+  },
+  {
+    "title": "AC's Coffee",
+    "image": "images/coffee.webp",
+    "address": "202 Brew St, New Albany",
+    "description": "Cozy spot with locally roasted coffee and live music on weekends."
+  },
+  {
+    "title": "Action Lanes",
+    "image": "images/bowling.webp",
+    "address": "303 Garden Ave, New Albany",
+    "description": "Great place to go bowling."
+  }
+]
