@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspiration | Dracollum</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <script type="module" src="scripts/inspiration.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Dracollum</h1>
+    <nav>
+      <button id="menuToggle" aria-label="Toggle Menu">☰</button>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inspiration.html" class="active">Inspiration</a></li>
+        <li><a href="namegen.html">Name Generator</a></li>
+        <li><a href="submit.html">Submit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Find Your Spark</h2>
+      <p>Explore quotes, prompts, and lore seeds to ignite your imagination.</p>
+    </section>
+
+    <section id="inspiration-cards" class="card-grid">
+      <!-- Dynamic cards will be populated here via JS -->
+    </section>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-text"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dracollum. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- story-form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Your Story | Dracollum</title>
+</head>
+<body>
+  <h1>Submit Your Story</h1>
+  <form action="story-display.html" method="get">
+    <label for="author">Author Name:</label>
+    <input type="text" id="author" name="author" required><br><br>
+
+    <label for="title">Story Title:</label>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="genre">Genre:</label>
+    <select id="genre" name="genre">
+      <option value="fantasy">Fantasy</option>
+      <option value="sci-fi">Sci-Fi</option>
+      <option value="myth">Myth</option>
+      <option value="dark">Dark Fantasy</option>
+    </select><br><br>
+
+    <label for="summary">Short Summary:</label><br>
+    <textarea id="summary" name="summary" rows="4" cols="50" required></textarea><br><br>
+
+    <button type="submit">Submit Story</button>
+  </form>
+</body>
+</html>

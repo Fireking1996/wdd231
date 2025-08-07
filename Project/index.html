@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dracollum - A sanctuary for fantasy writers to find inspiration, generate names, and craft magical worlds." />
+  <meta name="author" content="Charles Adam Davis" />
+  <title>Dracollum | Home</title>
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+<body>
+  <header>
+    <h1>Dracollum</h1>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="namegen.html">Name Generator</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="form.html">Submit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Dracollum</h2>
+      <p>Unleash your imagination. Create worlds, characters, and legends.</p>
+      <a href="namegen.html" class="cta">Start Generating Names</a>
+    </section>
+
+    <section id="spotlight">
+      <h3>Today's Inspiration</h3>
+      <div class="card" id="daily-inspiration">
+        <!-- Filled via JavaScript -->
+      </div>
+    </section>
+
+    <section id="features">
+      <h3>What You Can Do Here</h3>
+      <ul>
+        <li>⚔️ Generate unique fantasy names</li>
+        <li>📜 Browse daily writing prompts</li>
+        <li>🗺️ Build your world with magic systems and lore</li>
+        <li>📝 Save and export your ideas</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dracollum. All rights reserved.</p>
+    <p>Last Updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/menu.js" type="module"></script>
+  <script src="scripts/footer.js" type="module"></script>
+  <script src="scripts/inspiration.js" type="module"></script>
+</body>
+</html>

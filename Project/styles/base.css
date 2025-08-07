@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #8b1e3f; /* fantasy red */
+  --accent-color: #ffd29d;  /* parchment gold */
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: var(--primary-color);
+  color: #fff;
+  line-height: 1.6;
+  padding: 2rem;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3a0e0e;
+  padding: 1rem;
+  border-radius: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.wireframes img {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem 0;
+  border: 2px solid var(--accent-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffba69; /* slightly darker parchment */
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 210, 157, 0.3);
+}
+
+footer {
+  background-color: #3a0e0e;
+  color: var(--accent-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+#quote-box {
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 5px;
+}
