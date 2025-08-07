@@ -4,10 +4,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Submit Your Story | Dracollum</title>
+  <meta name="description" content="Dracollum - A sanctuary for fantasy writers to find inspiration, generate names, and craft magical worlds." />
+  <meta name="author" content="Charles Adam Davis" />
+  <title>Dracollum | Form</title>
+  <!-- Google Fonts (Combined) -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Dracollum | Form">
+  <meta property="og:description" content="Dracollum is a fantasy writer’s sanctuary. Find inspiration, generate unique names, and craft magical worlds.">
+  <meta property="og:image" content="https://fireking1996.github.io/wdd231/Project/images/og-image.jpg">
+  <meta property="og:url" content="https://fireking1996.github.io/wdd231/Project/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles/base.css" />
 </head>
 <body>
-  <h1>Submit Your Story</h1>
+   <header>
+  <h1>Dracollum | Form</h1>
+  <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="namegen.html">Name Generator</a></li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="form.html">Submit</a></li>
+      </ul>
+    </nav>
+  </header>
   <form action="story-display.html" method="get">
     <label for="author">Author Name:</label>
     <input type="text" id="author" name="author" required><br><br>
