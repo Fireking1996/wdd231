@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Dracollum - A sanctuary for fantasy writers to find inspiration, generate names, and craft magical worlds." />
   <meta name="author" content="Charles Adam Davis" />
-  <title>Dracollum | Name Generator</title>
+  <title>Dracollum | Map Maker</title>
   <!-- Google Fonts (Combined) -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
@@ -13,50 +13,37 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   
   <!-- Open Graph Meta -->
-  <meta property="og:title" content="Dracollum | Name Generator">
+  <meta property="og:title" content="Dracollum | Map Maker">
   <meta property="og:description" content="Dracollum is a fantasy writer’s sanctuary. Find inspiration, generate unique names, and craft magical worlds.">
   <meta property="og:image" content="https://fireking1996.github.io/wdd231/Project/images/og-image.jpg">
   <meta property="og:url" content="https://fireking1996.github.io/wdd231/Project/">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+  <script src="scripts/map.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Dracollum | Name Generator</h1>
+    <h1>Dracollum | Map Maker</h1>
   </header>
   <nav>
       <button id="menu-toggle">☰</button>
       <ul id="menu">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="namegen.html">Name Generator</a></li>
+        <li><a href="mapmaker.html">Map Maker</a></li>
         <li><a href="inspiration.html">Inspiration</a></li>
         <li><a href="form.html">Submit</a></li>
       </ul>
     </nav>
   <main>
-    <form id="namegen-form">
-      <label for="category">Category:</label>
-      <select id="category" name="category">
-        <option value="human">Human</option>
-        <option value="elf">Elf</option>
-        <option value="dwarf">Dwarf</option>
-        <option value="orc">Orc</option>
-        <option value="dragon">Dragon</option>
-        <option value="fairy">Fairy</option>
-      </select>
-
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="neutral">Neutral</option>
-      </select>
-
-      <button type="submit">Generate</button>
-    </form>
-
-    <section id="result">
-      <p>Your generated name will appear here.</p>
+    <section class="map-section">
+      <h2>Realm Map</h2>
+        <canvas id="mapCanvas" width="800" height="500" style="border:1px solid var(--accent-color);"></canvas>
+      <div style="margin-top:1rem;">
+        <button id="clearBtn">Clear Map</button>
+        <button id="saveBtn">Save Image</button>
+      </div>
     </section>
   </main>
 
